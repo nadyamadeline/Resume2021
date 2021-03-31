@@ -10,7 +10,7 @@ $color5: #c0ae98;
 .about {
   display: flex;
   flex-direction: column;
-  margin: 0 6.25rem;
+  margin: 0 auto;
   padding: 7.75rem 0;
   position: relative;
   z-index: 3;
@@ -40,6 +40,7 @@ $color5: #c0ae98;
 .about-container {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .about-data {
@@ -74,8 +75,56 @@ $color5: #c0ae98;
   height: 300px;
   position: absolute;
   top: 14rem;
-  left: 670px;
+  // left: 670px;
+  right: -4%;
   border: 3px solid $color5;
   border-radius: 0.25rem;
   z-index: -1;
+}
+
+@media screen and (max-width: 1080px) {
+  .about-data {
+    margin-right: 3rem;
+  }
+  .my-img {
+    img {
+      width: 250px;
+      height: 250px;
+    }
+
+    .img-border {
+      width: 250px;
+      height: 250px;
+      // right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    margin: 0 50px;
+  }
+  .about-container {
+    // max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-data {
+    margin-right: 0;
+    p {
+      width: 100%;
+    }
+  }
+
+  .my-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    position: relative;
+
+    .img-border {
+      top: 1.5rem;
+      right: 170px;
+    }
+  }
 }

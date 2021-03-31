@@ -4,8 +4,9 @@ $color3: #837563;
 $color4: #e1d9d6;
 $color5: #c0ae98;
 .experience {
-  margin: 0 210px;
+  margin: 0 auto;
   padding: 200px 0 100px;
+  max-width: 700px;
 }
 
 .jobs-table {
@@ -78,5 +79,11 @@ $color5: #c0ae98;
       padding-bottom: 0.5rem;
       color: $color3;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experience {
+    margin: 0 50px;
   }
 }

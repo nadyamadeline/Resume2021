@@ -2,3 +2,15 @@
   padding: 0 150px;
   background-color: #f8faf9;
 }
+
+@media screen and (max-width: 1000px) {
+  .sections {
+    padding: 0px 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sections {
+    padding: 0;
+  }
+}

@@ -9,7 +9,7 @@ $color5: #c0ae98;
   min-height: 100vh;
   justify-content: center;
   flex-direction: column;
-  padding: 0 6.25rem;
+  margin: 0px auto;
   max-width: 1000px;
 
   p {
@@ -20,8 +20,10 @@ $color5: #c0ae98;
   }
 
   h1 {
-    font-size: 5rem;
+    // font-size: 5rem;
+    font-size: clamp(2rem, 8vw, 4rem);
     color: $color3;
+    box-sizing: inherit;
   }
   h2 {
     font-size: 2.5rem;
@@ -50,5 +52,11 @@ $color5: #c0ae98;
     border: 1px solid $color3;
     color: $color3;
     background-color: inherit;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 3.275rem;
   }
 }

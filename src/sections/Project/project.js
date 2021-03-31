@@ -23,9 +23,8 @@ function project() {
             <div className="p1-detail">
               <p>
                 Created an interior design &amp; home decor web-app using React
-                and Redux, with features such as creating an appointment
-                (user/client), creating project package (admin/designer), and
-                uploading payment receipt.
+                and Redux, with features such as creating an appointment,
+                creating project package, and uploading payment receipt.
               </p>
             </div>
             <br />
@@ -51,9 +50,7 @@ function project() {
         </div>
         <div className="project2">
           <div className="p2-data">
-            <p className="featured" style={{ marginTop: "2rem" }}>
-              Featured Project
-            </p>
+            <p className="featured">Featured Project</p>
             <h3>Actflix: Movie Review App</h3>
             <br />
             <div className="p2-detail">

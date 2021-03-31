@@ -4,8 +4,8 @@ $color3: #837563;
 $color4: #f0ecea;
 $color5: #c0ae98;
 .project {
-  margin: 0 6.25rem;
-  padding: 7rem 0;
+  margin: 0 auto;
+  padding: 7rem 3rem;
   max-width: 1400px;
 }
 
@@ -70,6 +70,7 @@ $color5: #c0ae98;
     width: 500px;
     height: 280px;
     border-radius: 4px;
+    box-shadow: 10px 10px 8px #888888;
   }
 
   .p1-icons {
@@ -111,7 +112,7 @@ $color5: #c0ae98;
 
     .p2-detail {
       position: absolute;
-      top: 105px;
+      top: 65px;
       left: 0;
       width: 480px;
       height: 52px;
@@ -149,6 +150,8 @@ $color5: #c0ae98;
       width: 500px;
       height: 280px;
       border-radius: 4px;
+      // box-shadow: 0px 4px 20px rgba(1, 10, 15, 0.9);
+      box-shadow: 10px 10px 8px #888888;
     }
   }
 }
@@ -167,4 +170,43 @@ $color5: #c0ae98;
   color: $color2;
   font-family: "Open Sans";
   font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .project1 {
+    img {
+      width: 350px;
+      height: 220px;
+    }
+    .p1-data {
+      h3 {
+        font-size: 1.35rem;
+      }
+      .p1-detail {
+        width: 402px;
+        height: 85px;
+        font-size: 12px;
+        padding: 5px 16px 5px 0;
+      }
+    }
+  }
+  .project2 {
+    .img-container {
+      img {
+        width: 350px;
+        height: 220px;
+      }
+    }
+    .p2-data {
+      .featured {
+        margin-top: 0;
+      }
+      .p2-detail {
+        padding: 5px 16px 12px 20px;
+        width: 402px;
+        height: 50px;
+        font-size: 13px;
+      }
+    }
+  }
 }
